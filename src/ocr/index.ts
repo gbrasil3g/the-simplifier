@@ -1,1 +1,1 @@
-export { default as createOcrWorker } from './Ocr';
+export { default as readImage } from './Ocr';

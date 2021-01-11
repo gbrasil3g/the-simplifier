@@ -8,7 +8,7 @@ class InternalError extends Error {
   constructor(text: string) {
     super(text);
 
-    this.message = errorMens;
+    this.name = errorMens;
   }
 }
 

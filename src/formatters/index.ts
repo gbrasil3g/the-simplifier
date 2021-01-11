@@ -1,1 +1,1 @@
-export { default as formatNum } from './NumberFormatter';
+export { default as NumberFormatter } from './NumberFormatter';
