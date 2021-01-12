@@ -29,7 +29,7 @@ const convertColors = async(forWhat: convertColors, { hexCode, rgbCode }: conver
         throw new InternalError('The RGB code array must be only 3 items!')
       }
       
-      return RGBToHex(mapRgbCodes)
+      return RGBToHex(`#${mapRgbCodes}`)
     }
   
     if(forWhat === 'RGBToHex' && hexCode) {
