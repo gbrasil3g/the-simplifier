@@ -1,6 +1,6 @@
 import colorsConvert from 'color-convert';
 
-import { converColorsOptions, convertColors } from '../@types/index';
+import { converColorsOptions, convertColorsType } from '../@types/index';
 import { InternalError } from '../errors';
 
 const RGBToHex = (
@@ -12,7 +12,7 @@ const RGBToHex = (
 const HexToRGB = (hexColor: string) => {
   return colorsConvert.hex.rgb(hexColor);
 };
-const convertColors = async(forWhat: convertColors, { hexCode, rgbCode }: converColorsOptions = {}): Promise<any> => {
+const convertColors = async(forWhat: convertColorsType, { hexCode, rgbCode }: converColorsOptions = {}): Promise<any> => {
   try {
     if(forWhat === 'HexToRGB' && hexCode) {
       return HexToRGB(hexCode.valueOf())
