@@ -2,8 +2,8 @@
   "name": "the-simplifier",
   "description": "A simple package to simplify your tasks as a programmer",
   "version": "1.0.5",
-  "main": "dist/simplifier.js",
-  "types": "src/@types/index.d.ts",
+  "main": "./dist/simplifier.js",
+  "types": "./types/simplifier.d.ts",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/gbrasil3g/the-simplifier/issues"
