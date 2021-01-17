@@ -7,7 +7,6 @@
     "start:dev": "ts-node-dev 'src/index.ts'",
     "build": "bili",
     "test": "yarn test:types && yarn test:unit",
-    "test:manual": "ts-node-dev 'tests/manualTests/index.ts'",
     "test:unit": "jest",
     "test:types": "tsc -p ./tsconfig.build.json --noEmit",
     "lint": "eslint ./src ./tests --ext .ts",
@@ -41,6 +40,7 @@
   "dependencies": {
     "chalk": "^4.1.0",
     "color-convert": "^2.0.1",
+    "debug": "^4.3.1",
     "hex-color-regex": "^1.1.0",
     "is-hexcolor": "^1.0.0",
     "isurl": "^4.0.1",

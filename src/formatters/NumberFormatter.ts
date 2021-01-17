@@ -1,6 +1,9 @@
 import { Formatter } from '../@types/index';
 
-const NumberFormatter = (input: number, formatter: Formatter) => {
+const NumberFormatter = async (
+  input: number,
+  formatter: Formatter
+): Promise<string> => {
   const n = String(input),
     p = n.indexOf('.');
 
