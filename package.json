@@ -8,6 +8,10 @@
     "url": "https://github.com/gbrasil3g/the-simplifier/issues"
   },
   "homepage": "https://github.com/gbrasil3g/the-simplifier/blob/master/docs/README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gbrasil3g/the-simplifier"
+  },
   "scripts": {
     "start:dev": "ts-node-dev 'src/index.ts'",
     "build": "bili",
