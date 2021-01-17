@@ -2,6 +2,10 @@
   "name": "the-simplifier",
   "description": "A simple package to simplify your tasks as a programmer",
   "version": "1.0.8",
+  "files": [
+    "dist",
+    "types"
+  ],
   "main": "./dist/simplifier.js",
   "types": "./types/simplifier.d.ts",
   "license": "MIT",
