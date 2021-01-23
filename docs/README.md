@@ -125,3 +125,34 @@ let hex = async() => {
 }
 
 hex() // Expected: Invalid
+```
+
+## OTHERS
+
+### getRandomInt
+
+```js
+import { getRandomInt } from 'the-simplifier'
+
+let random = async() => {
+  let result = getRandomInt(10, 100)
+
+  console.log(result)
+}
+
+random() // Expected: A number between 10 and 100
+```
+
+### generateChars
+
+```js
+import { generateChars } from 'the-simplifier'
+
+let random = async() => {
+  let result = generateChars(10)
+
+  console.log(result)
+}
+
+random() // Expected: 10 random chars
+```
