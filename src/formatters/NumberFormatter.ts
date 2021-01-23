@@ -1,4 +1,4 @@
-import { Formatter } from '../@types/index';
+export type Formatter = '.' | ',' | '-' | ' ';
 
 const NumberFormatter = async (
   input: number,

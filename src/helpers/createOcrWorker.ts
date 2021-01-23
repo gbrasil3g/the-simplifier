@@ -3,9 +3,7 @@ import isUrl from 'valid-url';
 
 import InternalError from '../errors/InternalError';
 
-const worker = createWorker({
-  logger: (m) => console.log(m),
-});
+const worker = createWorker();
 
 const createOcrWorker = async (imageUrl: string): Promise<string> => {
   if (isUrl.isUri(imageUrl)) {

@@ -1,7 +1,13 @@
 import colorsConvert from 'color-convert';
 
-import { converColorsOptions, convertColorsType } from '../@types/index';
 import { InternalError } from '../errors';
+
+export type convertColorsType = 'RGBToHex' | 'HexToRGB';
+
+export interface converColorsOptions {
+  hexCode?: string;
+  rgbCode?: number[];
+}
 
 const RGBToHex = (
   firstRGBvalue: any,

@@ -1,4 +1,7 @@
-import { convertTimeOptions } from '../@types/index';
+export interface convertTimeOptions {
+  from: 'minutes' | 'hours' | 'seconds';
+  to: 'minutes' | 'hours' | 'seconds';
+}
 
 //@ts-ignore
 const convertTime = async(valueToConvert: number,{ from, to }: convertTimeOptions = {}): Promise<any> => {
