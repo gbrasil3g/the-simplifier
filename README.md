@@ -156,3 +156,19 @@ let random = async() => {
 
 random() // Expected: 10 random chars
 ```
+
+### getRandomFromArray
+
+```js
+import { getRandomFromArray } from 'the-simplifier'
+
+let random = async() => {
+  let array = [1, 'two', true]
+
+  let result = getRandomFromArray(array)
+
+  console.log(result)
+}
+
+random() // Expected: A random item from array
+```
