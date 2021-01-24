@@ -1,11 +1,9 @@
-interface params {
+const getRandomFromArray = (
   arrayParam: string[] | number[] | boolean[] | any[]
-}
+): string | boolean | number | any => {
+  const result = arrayParam[Math.floor(Math.random() * arrayParam.length)];
 
-let getRandomFromArray = (arrayParam: string[] | number[] | boolean[] | any[]) => {
-  let result = arrayParam[Math.floor(Math.random() * arrayParam.length)]
+  return result;
+};
 
-  return result
-}
-
-export default getRandomFromArray
+export default getRandomFromArray;

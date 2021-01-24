@@ -1,2 +1,3 @@
 src/converters/convertColors.ts
 src/converters/convertTime.ts
+src/formatters/NumberFormatter.ts

@@ -1,9 +1,9 @@
-import { getRandomFromArray } from '../../src/simplifier'
+import { NumberFormatter } from '../../src/simplifier'
 
 let func = async() => {
-  let arr = ['maça', true, 14]
-
-  let res = getRandomFromArray(['maça', true, 14])
+  let res = await NumberFormatter(10000, {
+    formatter: ','
+  })
 
   console.log(res)
 }

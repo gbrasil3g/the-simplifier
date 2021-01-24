@@ -81,7 +81,9 @@ convert() // Expected: 83.33333333333333
 import { NumberFormatter } from 'the-simplifier'
 
 const format = async() => {
-  const result = NumberFormatter(5000, '.')
+  const result = await NumberFormatter(5000, {
+    formatter: '.'
+  })
 
   console.log(result)
 }
