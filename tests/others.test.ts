@@ -13,7 +13,7 @@ it('Should generate 10 random chars', () => {
 });
 
 it('Should return a random item from the provided array', () => {
-  let array = [1, 'two', true];
+  const array = [1, 'two', true];
 
   expect(getRandomFromArray(array)).toBeDefined();
 });

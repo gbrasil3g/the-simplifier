@@ -1,11 +1,9 @@
-import { NumberFormatter } from '../../src/simplifier'
+import { isWebsiteUp } from '../../src/simplifier'
 
 let func = async() => {
-  let res = await NumberFormatter(10000, {
-    formatter: ','
-  })
+  let res = await isWebsiteUp('https://youtube.com')
 
   console.log(res)
-}
+} 
 
 func()
