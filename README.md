@@ -4,7 +4,7 @@
 
 # Official Documentation
 
-## [Click here]('https://gbrasil3g.gitbook.io/the-simplifier/')
+## https://gbrasil3g.gitbook.io/the-simplifier/
 
 <br>
 
