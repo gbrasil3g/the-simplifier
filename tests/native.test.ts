@@ -38,7 +38,7 @@ describe('Using the "native" function "Map"', () => {
   it('Should return a value from a json', () => {
     const testMap = new Map({ load: require('path').resolve(__dirname, './json/map.json') })
 
-    expect(testMap.get('Message')).toBe('Hello')
+    expect(testMap.get('Message')).toBeDefined()
   })
 
   it('Should write a value in a json', () => {
