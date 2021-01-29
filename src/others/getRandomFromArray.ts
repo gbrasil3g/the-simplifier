@@ -1,6 +1,6 @@
 const getRandomFromArray = (
-  arrayParam: string[] | number[] | boolean[] | any[]
-): string | boolean | number | any => {
+  arrayParam: string[] | number[] | boolean[] | unknown[]
+): string | boolean | number | unknown => {
   const result = arrayParam[Math.floor(Math.random() * arrayParam.length)];
 
   return result;

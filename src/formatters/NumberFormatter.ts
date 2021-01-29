@@ -1,8 +1,7 @@
 export interface Formatter {
   formatter: '.' | ',' | '-' | ' '
 }
-//@ts-ignore
-const NumberFormatter = async(input, { formatter }: Formatter = {}): Promise<string> => {
+const NumberFormatter = async(input: string|number, { formatter }: Formatter): Promise<string> => {
   const n = String(input),
   p = n.indexOf('.')
 

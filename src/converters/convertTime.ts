@@ -3,8 +3,7 @@ export interface convertTimeOptions {
   to: 'minutes' | 'hours' | 'seconds';
 }
 
-//@ts-ignore
-const convertTime = async(valueToConvert: number,{ from, to }: convertTimeOptions = {}): Promise<any> => {
+const convertTime = async(valueToConvert: number,{ from, to }: convertTimeOptions): Promise<unknown> => {
   if (from === 'hours' && to === 'minutes') {
     return valueToConvert * 60;
   }
