@@ -1,6 +1,7 @@
 const generateChars = (quantity: number): string => {
   let result = '';
-  const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+  const chars =
+    'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
   const charsQuantity = chars.length;
 
   for (let i = 0; i < quantity; i++) {

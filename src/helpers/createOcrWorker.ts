@@ -3,9 +3,9 @@ import isUrl from 'valid-url';
 
 import InternalError from '../errors/InternalError';
 
-const worker = createWorker();
-
 const createOcrWorker = async (imageUrl: string): Promise<string> => {
+  const worker = await createWorker();
+
   if (isUrl.isUri(imageUrl)) {
     await worker.load();
     await worker.loadLanguage('eng');
