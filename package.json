@@ -76,7 +76,7 @@
     "isurl": "^4.0.1",
     "moment": "^2.29.1",
     "node-fetch": "^2.6.1",
-    "puppeteer-core": "^5.5.0",
+    "puppeteer-core": "^6.0.0",
     "tesseract.js": "^2.1.4",
     "valid-url": "^1.0.9",
     "winston": "^3.3.3",
